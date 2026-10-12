@@ -7,8 +7,9 @@ Mess- oder Urheberrechtsbehauptungen haben hier keinen Platz.
 
 Kevin Fröba / @MasterPlayspots moderiert das Projekt. Maintainer können zunächst um Korrektur bitten
 und bei wiederholten oder schweren Verstößen Beiträge ablehnen oder Unterhaltungen begrenzen.
-Für vertrauliche Meldungen zuerst einen privaten Kontaktweg vereinbaren; sensible Einzelheiten
-nicht in öffentliche Issues schreiben. Es wird keine feste Reaktionszeit zugesagt.
+Vertrauliche Verhaltensmeldungen bitte per E-Mail an kevin.froeba@motionspec.dev;
+das Postfach wird von Kevin Fröba betreut. Bitte keine sensiblen Details öffentlich posten. Der Kanal für Sicherheitslücken (siehe SECURITY.md)
+ist für Schwachstellen gedacht, nicht für Verhaltensmeldungen. Es wird keine feste Reaktionszeit zugesagt.
 
 Diese kurze Regelung ist ein eigener Projekttext und behauptet keine Mitgliedschaft in einem
 externen Verhaltenskodex-Programm.

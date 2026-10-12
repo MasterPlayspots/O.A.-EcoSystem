@@ -1,21 +1,30 @@
 ---
 name: "Gerätebericht"
-about: "Ein konkretes Profil mit nachprüfbarer Evidenz"
+about: "Ein konkretes Geräteprofil mit nachprüfbarem Beleg"
 title: ""
-labels: ""
+labels: "area:profiles,status:triage"
 assignees: ""
 ---
 
-## Ziel / Beobachtung
+## Gerätefamilie
+Modellfamilie; bei Konsolen die CFI nur, wenn sie für das Ergebnis nötig ist.
 
-## Profil und Softwarestand (keine Seriennummer oder privaten Adressen)
+## Firmware / Betriebssystem
 
-## Quelle und Datum
+## Runtime- und Modellversion
+Name und exakte Version/Revision, Quantisierung, Quelle.
 
-## Reproduktion / Abnahme
+## Bedingungen
+Was wurde wie ausgeführt (Parameter, Kontext, Rolle des Geräts)?
 
-## Grenzen und Nicht-Ziele
+## Datum der Beobachtung
+
+## Beleg
+Redigierter Auszug oder Messwerte mit Einheit und Messpunkt.
+
+## Grenzen
+Was wurde nicht geprüft, was ist unbekannt?
 
 ## Datenschutz
-Keine Schlüssel, .env-Dateien, private Prompts/Antworten oder vollständige Logs anhängen.
+Keine Seriennummern, IP-Adressen, Hostnamen, Secretwerte oder vollständigen Logs posten.
 Vertrauliche Sicherheitsprobleme nicht öffentlich melden; siehe SECURITY.md.

@@ -8,11 +8,11 @@ Keine fremden Systeme testen und keine Homebrew-, Firmware- oder Modellaktionen 
 
 ## Vertraulich melden
 
-Nach bestätigter Aktivierung der privaten Schwachstellenmeldung: im Repository unter
-Security → Report a vulnerability melden. Die Aktivierung muss vor der Community-Ankündigung
-in GitHub geprüft und im Bootstrap-Bericht bestätigt werden; diese Datei aktiviert nichts.
-Ist die Option nicht verfügbar, zunächst nur ohne technische Details den Maintainer um einen
-vertraulichen Kanal bitten. Keine Secrets oder ausnutzbaren Einzelheiten in öffentliche Issues schreiben.
+Die private Schwachstellenmeldung von GitHub ist für dieses Repository aktiviert (zuletzt geprüft
+am 12.10.2026). Schwachstellen bitte über Security → Report a vulnerability melden:
+<https://github.com/MasterPlayspots/O.A.-EcoSystem/security/advisories/new>.
+Der Menüpunkt ist öffentlich sichtbar; zum Absenden ist ein angemeldetes GitHub-Konto nötig.
+Diese Datei selbst schaltet nichts ein — maßgeblich ist die Repository-Einstellung. Keine Secrets oder ausnutzbaren Einzelheiten in öffentliche Issues schreiben.
 Wir versprechen keine feste Reaktionszeit, solange kein betreuter Bereitschaftsprozess eingerichtet ist.
 
 ## Sicherheitsgrenzen

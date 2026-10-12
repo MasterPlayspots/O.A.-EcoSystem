@@ -25,8 +25,8 @@ ein Netzwerktunnel addiert nicht die Arbeitsspeicher oder GPUs verschiedener Ger
 [Projektindex](docs/PROJECT_INDEX.md) · [Plan](docs/MASTERPLAN.md) · [Geräteprofile](docs/PROFILES.md) ·
 [Architektur](docs/ARCHITECTURE.md) · [Roadmap](docs/ROADMAP.md) · [Kommunikation](docs/COMMUNICATION.md)
 
-Konkrete Arbeit gehört in Issues, Änderungen in kleine Pull Requests, Fragen/Ideen in Discussions,
-sobald diese aktiviert sind. Dokumentation, API-Verträge, Quellenprüfung, Mock-Tests und Übersetzungen
+Konkrete Arbeit gehört in Issues, Änderungen in kleine Pull Requests, Fragen/Ideen in Discussions —
+Einstieg: [Hier anfangen / Mitmachen](https://github.com/MasterPlayspots/O.A.-EcoSystem/discussions/14). Dokumentation, API-Verträge, Quellenprüfung, Mock-Tests und Übersetzungen
 ermöglichen Mitarbeit ohne Konsole. [Beitragsregeln](CONTRIBUTING.md) und [Reviewauftrag](docs/CLAUDE_REVIEW.md)
 erklären den Einstieg.
 

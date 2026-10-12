@@ -20,8 +20,9 @@ nor connected in this start. Decisions made there must be brought back, redacted
 Intended categories: **Announcements** (maintainers), **Q&A** (questions and getting started),
 **Ideas** (ideas and RFCs), **Device Reports**, **Show and tell**. Reuse existing categories;
 create new categories according to the rights/API actually available. Do not guess category IDs.
-Status on 12 Oct 2026: Announcements, Q&A, Ideas, Show and tell, General and Polls exist;
-**Device Reports is proposed and does not exist yet** (owner task in the GitHub UI).
+Status observed on 12 Oct 2026 at 17:28 UTC: Announcements, Q&A, Ideas,
+Show and tell, General, Polls and **Device Reports** exist.
+The start announcement (#16) is pinned globally in the Discussions overview.
 Two threads at the start: "start here / get involved" and "which devices and roles would you like to contribute?".
 Private vulnerability reports are not a discussion topic.
 

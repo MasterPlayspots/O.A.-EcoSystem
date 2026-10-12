@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.gguf
+*.elf
+*.zip
+*.tar.gz
+.DS_Store
+node_modules/
+.local/
+private/
+secrets/
+CLAUDE.local.md
+.claude/settings.local.json

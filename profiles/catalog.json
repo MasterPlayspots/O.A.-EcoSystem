@@ -1,0 +1,65 @@
+{
+  "format": "oa.ecosystem.profile-catalog.draft.v1",
+  "executable": false,
+  "auto_discovery": false,
+  "auto_install": false,
+  "automatic_cloud_fallback": false,
+  "profiles": [
+    {
+      "id": "mock",
+      "roles": [
+        "client",
+        "gateway",
+        "fixture"
+      ],
+      "state": "planned",
+      "evidence": null
+    },
+    {
+      "id": "single-host",
+      "roles": [
+        "client",
+        "gateway",
+        "inference_worker"
+      ],
+      "state": "planned",
+      "evidence": null
+    },
+    {
+      "id": "lan",
+      "roles": [
+        "client",
+        "gateway",
+        "relay",
+        "inference_worker"
+      ],
+      "state": "planned",
+      "evidence": null
+    },
+    {
+      "id": "remote-private",
+      "roles": [
+        "client",
+        "gateway",
+        "relay",
+        "inference_worker"
+      ],
+      "state": "planned",
+      "evidence": null
+    },
+    {
+      "id": "ps5-reference",
+      "roles": [
+        "inference_worker"
+      ],
+      "state": "historical_experiment_not_revalidated",
+      "evidence_note": "Siehe öffentliches Evidenzdokument. Kein neues Hardware-Supportlabel."
+    },
+    {
+      "id": "ps4-research",
+      "roles": [],
+      "state": "research_only",
+      "evidence": null
+    }
+  ]
+}

@@ -2,20 +2,25 @@
 name: "Abgegrenzte Aufgabe"
 about: "Ziel, Grenzen und Abnahme einer kleinen Aufgabe"
 title: ""
-labels: ""
+labels: "status:triage"
 assignees: ""
 ---
 
-## Ziel / Beobachtung
+## Ziel
 
-## Profil und Softwarestand (keine Seriennummer oder privaten Adressen)
+## Nicht-Ziele
 
-## Quelle und Datum
+## Ausgabe
+Welche Datei, welcher PR oder welches Dokument entsteht?
 
-## Reproduktion / Abnahme
+## Abhängigkeiten
+Andere Task-IDs oder Issues, die vorher erledigt sein müssen.
 
-## Grenzen und Nicht-Ziele
+## Risiko
+
+## Akzeptanzkriterien
+- [ ] …
 
 ## Datenschutz
-Keine Schlüssel, .env-Dateien, private Prompts/Antworten oder vollständige Logs anhängen.
+Keine Schlüssel, .env-Dateien, privaten Prompts/Antworten oder vollständigen Logs anhängen.
 Vertrauliche Sicherheitsprobleme nicht öffentlich melden; siehe SECURITY.md.

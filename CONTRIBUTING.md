@@ -1,31 +1,34 @@
-# Mitmachen
+# Contributing
 
-Starte mit [Projektindex](docs/PROJECT_INDEX.md) und [Roadmap](docs/ROADMAP.md).
-Keine PS5 ist für Dokumentation, Vertragsdesign, Quellenprüfung und spätere Fixture-Tests erforderlich.
+Start with the [project index](docs/PROJECT_INDEX.md) and the [roadmap](docs/ROADMAP.md).
+No PS5 is required for documentation, contract design, source review or later fixture tests.
 
-## Ablauf
+## Workflow
 
-Idee oder Frage in Discussions; konkrete Aufgabe als Issue mit Ziel, Nicht-Zielen, Abnahme und Risiko.
-Vor größeren Änderungen Umfang abstimmen. Repository forken, kleinen Themenbranch erstellen,
-kleinen PR gegen main öffnen und die Task-ID/Issue referenzieren. Maintainer entscheiden über Merge.
-Bitte keine unerbetenen Tag-/Release-/Deploymentaktionen.
+Ideas or questions go to Discussions; a concrete task becomes an issue with goal, non-goals, acceptance and risk.
+Agree on scope before larger changes. Fork the repository, create a small topic branch,
+open a small PR against main and reference the task ID/issue. Maintainers decide on merging.
+Please do not perform unrequested tag/release/deployment actions.
 
-`main` ist durch ein Ruleset geschützt: Änderungen nur per PR, mindestens ein Approval eines Kontos mit
-Schreibrechten, offene Reviewgespräche müssen aufgelöst sein. Niemand kann den eigenen PR selbst
-freigeben. PRs aus der Community kann der Owner prüfen und freigeben. PRs, die unter dem Owner-Konto
-eröffnet werden, brauchen das Approval eines anderen berechtigten Kontos; ein weiteres KI-Modell unter
-demselben Konto zählt nicht als Reviewer. Bis ein solcher Reviewer benannt ist, bleiben diese PRs offen.
+`main` is protected by a ruleset: changes only via PR, at least one approval from an account with
+write access, and open review conversations must be resolved. Nobody can approve their own PR.
+The owner can review and approve PRs from the community. PRs opened under the owner account
+need the approval of another eligible account; another AI model under the
+same account does not count as a reviewer. Until such a reviewer is named, these PRs remain open.
 
-Jeder PR nennt Änderungen, tatsächlich durchgeführte Tests, fehlende Tests, betroffene Profile,
-Lizenz-/Creditänderungen und Daten-/Sicherheitswirkung. Ein API-Test auf einem PC ist kein Konsolentest.
-Keine vollständigen privaten Logs, Prompt-/Antwortinhalte, Zugangsdaten, Seriennummern oder reale
-Betreiberadressen hochladen. Geräteberichte nutzen ein anonymes Profil und den tatsächlichen Softwarestand.
+Every PR states the changes, the tests actually run, missing tests, affected profiles,
+licence/credit changes and data/security impact. An API test on a PC is not a console test.
+Do not upload complete private logs, prompt/response content, credentials, serial numbers or real
+operator addresses. Device reports use an anonymous profile and the actual software version.
 
-KI-assistierte Beiträge sind willkommen; verwendete Werkzeuge offen nennen, Inhalt selbst prüfen.
-Keine fremde Autorenschaft erfinden oder fremde Copyright-/Lizenzvermerke entfernen.
-Die eigenen Beiträge werden unter der Repositorylizenz eingereicht, soweit du die Rechte dazu hast;
-Drittanteile vorher benennen und getrennt lizenzieren.
+AI-assisted contributions are welcome; name the tools used openly and review the content yourself.
+Do not invent authorship or remove third-party copyright/licence notices.
+Your own contributions are submitted under the repository licence, to the extent you hold the rights to do so;
+name third-party parts beforehand and license them separately.
 
-Projektarbeit beginnt auf Deutsch; englische Beiträge sind willkommen. Ein englischer Einstiegsweg
-ist ein eigenes Dokumentationsziel, keine vorgetäuschte bereits vollständige Übersetzung.
-Respektiere [Verhaltensregeln](CODE_OF_CONDUCT.md) und [SECURITY.md](SECURITY.md).
+## Language
+
+Maintained public project material and new project-authored updates are written in English.
+Internal coordination and historical originals may remain in German or their original language.
+Nobody is excluded merely for writing in another language; maintainers may add an English summary.
+Respect the [code of conduct](CODE_OF_CONDUCT.md) and [SECURITY.md](SECURITY.md).

@@ -1,17 +1,17 @@
-# ADR-0001 — Geräteunabhängiger Kern, getrennte Profile
+# ADR-0001 — Device-independent core, separate profiles
 
-Datum: 12.10.2026. Richtungsentscheidung des Auftraggebers: Dachname **O.A.-EcoSystem**.
-Konkrete technische Ausgestaltung: Vorschlag zur Gegenprüfung.
+Date: 12 Oct 2026. Direction decision by the project owner: umbrella name **O.A.-EcoSystem**.
+Concrete technical design: proposal for cross-checking.
 
-O.A.-EcoSystem ersetzt den geplanten Repositorynamen ourark-compute. Die bisherige Forschung
-wird nicht verworfen: PS5 & Hetzner bleibt ein eigenes experimentelles Profil.
+O.A.-EcoSystem replaces the planned repository name ourark-compute. The previous research
+is not discarded: PS5 & Hetzner remains a separate experimental profile.
 
-Kern, Hostplattform, Backend und Transport werden getrennt. Kleine Rollen können auf einem Rechner
-zusammenfallen; andere Nutzer verteilen sie auf ihre Geräte. Kompatibilität folgt aus validierten
-Fähigkeiten, nicht aus der Herstellermarke. Das erste Runtimeziel bleibt Textinferenz mit einem Worker.
+Core, host platform, backend and transport are separated. Small roles can coincide on one machine;
+other users distribute them across their devices. Compatibility follows from validated
+capabilities, not from the manufacturer's brand. The first runtime goal remains text inference with one worker.
 
-Alternative: PS5-festes Gateway als Dachprodukt. Verworfen als Zielstruktur, weil das unnötige
-Konsolen-/Providerpflichten für Nutzer ohne PS5 erzeugen würde.
+Alternative: a PS5-bound gateway as the umbrella product. Rejected as the target structure because it would create unnecessary
+console/provider obligations for users without a PS5.
 
-Nicht beschlossen: universeller Treiber, automatische Geräteübernahme, verteilter RAM,
-selbsttätiges Modellrouting oder funktionsfähige GPU-/PS4-/Simulationsmodule.
+Not decided: a universal driver, automatic device takeover, distributed RAM,
+autonomous model routing or working GPU/PS4/simulation modules.

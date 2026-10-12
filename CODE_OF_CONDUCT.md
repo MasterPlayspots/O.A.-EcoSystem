@@ -1,15 +1,15 @@
-# Zusammenarbeit
+# Working together
 
-Wir arbeiten respektvoll, sachlich und nachvollziehbar. Unterschiedliche Erfahrung ist willkommen.
-Kritik richtet sich auf überprüfbare Aussagen und Änderungen, nicht auf Personen.
-Belästigung, Diskriminierung, Drohungen, Veröffentlichung privater Daten und bewusst irreführende
-Mess- oder Urheberrechtsbehauptungen haben hier keinen Platz.
+We work respectfully, factually and transparently. Different levels of experience are welcome.
+Criticism addresses verifiable statements and changes, not people.
+Harassment, discrimination, threats, publishing private data and deliberately misleading
+measurement or copyright claims have no place here.
 
-Kevin Fröba / @MasterPlayspots moderiert das Projekt. Maintainer können zunächst um Korrektur bitten
-und bei wiederholten oder schweren Verstößen Beiträge ablehnen oder Unterhaltungen begrenzen.
-Ein dedizierter vertraulicher Kontaktweg für Verhaltensmeldungen ist noch nicht eingerichtet;
-bitte keine sensiblen Details öffentlich posten. Der Kanal für Sicherheitslücken (siehe SECURITY.md)
-ist für Schwachstellen gedacht, nicht für Verhaltensmeldungen. Es wird keine feste Reaktionszeit zugesagt.
+Kevin Fröba / @MasterPlayspots moderates the project. Maintainers may first ask for a correction
+and, in the case of repeated or serious violations, reject contributions or limit conversations.
+A dedicated confidential contact channel for conduct reports has not yet been set up;
+please do not post sensitive details publicly. The channel for security vulnerabilities (see SECURITY.md)
+is intended for vulnerabilities, not for conduct reports. No fixed response time is promised.
 
-Diese kurze Regelung ist ein eigener Projekttext und behauptet keine Mitgliedschaft in einem
-externen Verhaltenskodex-Programm.
+This short policy is the project's own text and does not claim membership in any
+external code-of-conduct programme.

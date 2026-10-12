@@ -1,25 +1,25 @@
-# Repository-Administration — Zielkonfiguration, nicht Aktivierungsnachweis
+# Repository administration — target configuration, not proof of activation
 
-Nach dem ersten redigierten Bootstrapcommit Einstellungen tatsächlich lesen und im Ergebnisbericht
-belegen. Eine Datei namens CODEOWNERS/SECURITY.md ist keine Plattformkonfiguration.
+After the first redacted bootstrap commit, actually read the settings and document them in the result
+report. A file named CODEOWNERS/SECURITY.md is not a platform configuration.
 
-| Bereich | Ziel |
+| Area | Target |
 |---|---|
-| Owner / Name | MasterPlayspots / O.A.-EcoSystem |
-| Sichtbarkeit | Public; nur dieses neue Repo, keine Sichtbarkeitsänderung anderer Repos |
+| Owner / name | MasterPlayspots / O.A.-EcoSystem |
+| Visibility | Public; only this new repo, no visibility change of other repos |
 | Default branch | main |
-| Community | Issues und Discussions an; kein separates Wiki als zweite Dokumentationsquelle |
-| Merge | Kein Auto-Merge; nach Bootstrap nur PRs |
-| main | Kein Force-Push, keine Löschung, Gespräche auflösen, 1 erforderliches Approval |
-| Checks | Nur wirklich vorhandene erfolgreiche Checknamen als Pflicht konfigurieren |
-| Security | Private Schwachstellenmeldung aktivieren/verifizieren, Secret-Scanning/Pushschutz prüfen |
-| Actions | Keine Betreiber-Secrets, read-only contents, kein privilegierter PR-Checkout, keine Heimrunner |
-| Kosten | Keine kostenpflichtigen Zusatzprodukte, große Runner, Cloudkonten oder Domains anlegen |
+| Community | Issues and Discussions on; no separate wiki as a second documentation source |
+| Merge | No auto-merge; after the bootstrap only PRs |
+| main | No force-push, no deletion, resolve conversations, 1 required approval |
+| Checks | Only configure check names that actually exist and succeed as required |
+| Security | Enable/verify private vulnerability reporting, check secret scanning/push protection |
+| Actions | No operator secrets, read-only contents, no privileged PR checkout, no home runners |
+| Costs | Do not create paid add-ons, large runners, cloud accounts or domains |
 
-Fehlt ein zweiter Reviewer, bleiben eigene Änderungen in PRs offen. Das ist kein Anlass, sich mit
- demselben Konto ein unabhängiges Approval zu erteilen oder Schutz abzuschalten. Einschränkungen
- der Rechte/API genau berichten; UI-Schritt des Owners als offenen Punkt benennen.
+If a second reviewer is missing, your own changes stay open in PRs. That is no reason to give
+ yourself an independent approval with the same account or to switch off protection. Report limitations
+ of permissions/API precisely; name the owner's UI step as an open item.
 
-Zum Start reichen lokal überprüfte Dokumente und JSON. Eine neue docs/schema-CI ist ein eigener
- kleiner PR; kein grünes Badge und kein Runtime-Testversprechen vor tatsächlichem CI-Lauf.
-Community-Ankündigung erst nach anonymer Ansicht und Prüfung der Mitmach-/Meldewege.
+For the start, locally checked documents and JSON are sufficient. A new docs/schema CI is its own
+ small PR; no green badge and no runtime test promise before an actual CI run.
+Community announcement only after an anonymous view and a check of the contribution/reporting paths.

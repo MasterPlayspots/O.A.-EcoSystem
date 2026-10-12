@@ -1,22 +1,22 @@
-# Projektindex — O.A.-EcoSystem
+# Project index — O.A.-EcoSystem
 
-Verantwortlicher: Kevin Fröba. Startphase: Community-Bootstrap, kein installierbares Produkt.
+Project lead: Kevin Fröba. Starting phase: community bootstrap, not an installable product.
 
-| Dokument | Zweck |
+| Document | Purpose |
 |---|---|
-| [Masterplan](MASTERPLAN.md) | Kern, Geräteprofile, schrittweise Umsetzung |
-| [Architektur](ARCHITECTURE.md) | Rollen, Datenweg, Grenzen und Ausfälle |
-| [Fähigkeiten](CAPABILITIES.md) | Messbare Fähigkeiten statt Geräteversprechen |
-| [Profile](PROFILES.md) | Was für welche Hardware geplant/geprüft ist |
-| [Kommunikation](COMMUNICATION.md) | Discussions, Issues, PRs, Entscheidungen, Status |
-| [Roadmap](ROADMAP.md) | Kleine Arbeitspakete und Abnahmekriterien |
-| [Claude-Review](CLAUDE_REVIEW.md) | Erster unabhängiger Gegenprüfauftrag |
-| [Evidenz](EVIDENCE.md) | Messdaten und Grenzen der RAM-Diagnose |
-| [Repository-Administration](REPOSITORY_ADMIN.md) | Plattformschutz tatsächlich prüfen |
-| [Entscheidungen](decisions/0001-device-independent-core.md) | Neue Dachstruktur und erstes Teilprojekt |
-| [Quellen](SOURCES.md) | Öffentliche Primärquellen |
-| [Credits](../CREDITS.md) | Beiträge und Urheber |
+| [Masterplan](MASTERPLAN.md) | Core, device profiles, step-by-step implementation |
+| [Architecture](ARCHITECTURE.md) | Roles, data path, limits and failures |
+| [Capabilities](CAPABILITIES.md) | Measurable capabilities instead of device promises |
+| [Profiles](PROFILES.md) | What is planned/checked for which hardware |
+| [Communication](COMMUNICATION.md) | Discussions, issues, PRs, decisions, status |
+| [Roadmap](ROADMAP.md) | Small work packages and acceptance criteria |
+| [Claude review](CLAUDE_REVIEW.md) | First independent cross-check brief |
+| [Evidence](EVIDENCE.md) | Measurement data and limits of the RAM diagnosis |
+| [Repository administration](REPOSITORY_ADMIN.md) | Actually verifying platform protection |
+| [Decisions](decisions/0001-device-independent-core.md) | New umbrella structure and first sub-project |
+| [Sources](SOURCES.md) | Public primary sources |
+| [Credits](../CREDITS.md) | Contributions and authors |
 
-Öffentliche Entscheidungen und technische Aufgaben sind hier und in verlinkten Issues/PRs maßgeblich.
-Interne Drive-Unterlagen sind keine Zugangsvoraussetzung. Keine automatische Synchronisierung,
-keine Runtimeverbindung zu einem privaten Betreiberaufbau.
+Public decisions and technical tasks are authoritative here and in linked issues/PRs.
+Internal Drive documents are not a prerequisite for access. No automatic synchronisation,
+no runtime connection to a private operator setup.

@@ -1,26 +1,26 @@
 ---
-name: "Abgegrenzte Aufgabe"
-about: "Ziel, Grenzen und Abnahme einer kleinen Aufgabe"
+name: "Scoped task"
+about: "Goal, limits and acceptance of a small task"
 title: ""
 labels: "status:triage"
 assignees: ""
 ---
 
-## Ziel
+## Goal
 
-## Nicht-Ziele
+## Non-goals
 
-## Ausgabe
-Welche Datei, welcher PR oder welches Dokument entsteht?
+## Output
+Which file, PR or document will be produced?
 
-## Abhängigkeiten
-Andere Task-IDs oder Issues, die vorher erledigt sein müssen.
+## Dependencies
+Other task IDs or issues that must be completed first.
 
-## Risiko
+## Risk
 
-## Akzeptanzkriterien
+## Acceptance criteria
 - [ ] …
 
-## Datenschutz
-Keine Schlüssel, .env-Dateien, privaten Prompts/Antworten oder vollständigen Logs anhängen.
-Vertrauliche Sicherheitsprobleme nicht öffentlich melden; siehe SECURITY.md.
+## Privacy
+Do not attach keys, .env files, private prompts/responses or complete logs.
+Do not report confidential security issues publicly; see SECURITY.md.

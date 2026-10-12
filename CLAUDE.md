@@ -2,6 +2,6 @@
 
 # Claude Code
 
-Beginne beim konkreten Nutzerauftrag. Der allgemeine Einstieg ist
-[docs/CLAUDE_REVIEW.md](docs/CLAUDE_REVIEW.md). Erfinde keine Implementierung aus der Zielarchitektur.
-Halte öffentliche Projektergebnisse im Repository; private Betriebsdaten bleiben außerhalb.
+Start from the concrete user request. The general entry point is
+[docs/CLAUDE_REVIEW.md](docs/CLAUDE_REVIEW.md). Do not invent an implementation from the target architecture.
+Keep public project results in the repository; private operating data stays outside.

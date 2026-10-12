@@ -1,9 +1,9 @@
 # Changelog
 
-## Community-Bootstrap — vorbereitet am 12.10.2026
+## Community bootstrap — prepared on 12 Oct 2026
 
-Neuer Projektname O.A.-EcoSystem; geräteunabhängiger Kern als Ziel und PS5 & Hetzner als
-experimentelles Referenzprofil. Öffentliche Mitmachstruktur, Credits, Kommunikationsregeln
-und Reviewpfad vorbereitet. Noch kein Inferenz-, Installer- oder Software-Release.
-Eine tatsächliche Online-Veröffentlichung wird durch GitHub-Commit und Bootstrap-Bericht belegt,
-nicht durch diese vorbereitete Notiz.
+New project name O.A.-EcoSystem; a device-independent core as the goal and PS5 & Hetzner as an
+experimental reference profile. Public contribution structure, credits, communication rules
+and review path prepared. No inference, installer or software release yet.
+An actual online publication is evidenced by the GitHub commit and bootstrap report,
+not by this prepared note.

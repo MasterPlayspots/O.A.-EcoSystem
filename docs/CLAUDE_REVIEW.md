@@ -1,18 +1,18 @@
-# Erster fachlicher Claude-Review
+# First technical Claude review
 
-Untersuche README, MASTERPLAN, ARCHITECTURE, CAPABILITIES, PROFILES, ROADMAP,
-COMMUNICATION und Credits. Nutze nur tatsächlich zugängliche Quellen. Ein öffentlicher
-Reviewer benötigt keine privaten Drive-Dokumente.
+Examine README, MASTERPLAN, ARCHITECTURE, CAPABILITIES, PROFILES, ROADMAP,
+COMMUNICATION and the credits. Use only sources that are actually accessible. A public
+reviewer does not need private Drive documents.
 
-Prüffragen: Ist der Kern geräteunabhängig? Sind CPU/GPU/OS/Firmware/Runtime und Policy sauber
-getrennt? Kann man ohne PS5 mitarbeiten? Welche Profile sind nur geplant? Welche Tests fehlen
-für Single-Worker-Abbruch, SSE, Limits, sichere Modellaliase und Auth? Sind Herkunft und
-Fremdlizenzen sichtbar? Welche Online-Einstellungen sind tatsächlich aktiv?
+Review questions: Is the core device-independent? Are CPU/GPU/OS/firmware/runtime and policy cleanly
+separated? Can people contribute without a PS5? Which profiles are only planned? Which tests are missing
+for single-worker cancellation, SSE, limits, safe model aliases and auth? Are provenance and
+third-party licences visible? Which online settings are actually active?
 
-Liefere Befunde mit ID, Schwere, Datei/Zeile/Commit, Quelle, Wirkung, Verbesserung und Abnahmetest.
-P0 blockiert die betroffene Freigabe; P1 muss vor der entsprechenden Fähigkeit geschlossen sein;
-P2 bleibt sichtbar offen. Positive Aussagen benötigen ebenfalls Nachweise.
+Deliver findings with ID, severity, file/line/commit, source, impact, improvement and acceptance test.
+P0 blocks the affected release; P1 must be closed before the corresponding capability;
+P2 remains visibly open. Positive statements also require evidence.
 
-Ohne eigenen Implementierungsauftrag keine Runtimeänderung, Geräteaktion oder Deployment.
-Der Review kann als Issuekommentar oder auf eigenem Reviewbranch/PR abgelegt werden;
-keinen selbst erzeugten PR selbst als unabhängig geprüft darstellen oder automatisch mergen.
+Without a separate implementation request: no runtime change, device action or deployment.
+The review can be filed as an issue comment or on its own review branch/PR;
+do not present a self-generated PR as independently reviewed and do not merge it automatically.

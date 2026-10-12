@@ -1,25 +1,25 @@
-# Sicherheit
+# Security
 
 ## Status
 
-Dokumentations-/Community-Bootstrap, noch keine unterstützte Runtimeversion.
-Der geplante Betrieb verbindet heterogene, teilweise experimentelle Geräte.
-Keine fremden Systeme testen und keine Homebrew-, Firmware- oder Modellaktionen aus einem Issue ableiten.
+Documentation/community bootstrap; no supported runtime version yet.
+The planned operation connects heterogeneous, partly experimental devices.
+Do not test other people's systems and do not derive homebrew, firmware or model actions from an issue.
 
-## Vertraulich melden
+## Reporting confidentially
 
-Die private Schwachstellenmeldung von GitHub ist für dieses Repository aktiviert (zuletzt geprüft
-am 12.10.2026). Schwachstellen bitte über Security → Report a vulnerability melden:
+GitHub's private vulnerability reporting is enabled for this repository (last checked
+on 12 Oct 2026). Please report vulnerabilities via Security → Report a vulnerability:
 <https://github.com/MasterPlayspots/O.A.-EcoSystem/security/advisories/new>.
-Der Menüpunkt ist öffentlich sichtbar; zum Absenden ist ein angemeldetes GitHub-Konto nötig.
-Diese Datei selbst schaltet nichts ein — maßgeblich ist die Repository-Einstellung. Keine Secrets oder ausnutzbaren Einzelheiten in öffentliche Issues schreiben.
-Wir versprechen keine feste Reaktionszeit, solange kein betreuter Bereitschaftsprozess eingerichtet ist.
+The menu entry is publicly visible; submitting requires a signed-in GitHub account.
+This file itself enables nothing — the repository setting is what counts. Do not write secrets or exploitable details in public issues.
+We do not promise a fixed response time as long as no staffed on-call process has been set up.
 
-## Sicherheitsgrenzen
+## Security boundaries
 
-Keine Hardware-/Produktionszugänge in öffentlicher CI. Keine untrusted PRs auf persönlichen Rechnern
-oder einem Self-Hosted-Runner mit Heimnetzzugriff ausführen. Im ersten Start nur Dokument-/Schema-Checks
-auf GitHub-gehosteten Standardrunnern, minimale Rechte und keine Betreiber-Secrets.
-Private Betriebsunterlagen sind kein öffentlicher Bugreport. Ein versehentlich veröffentlichtes Secret
-ist als kompromittiert zu behandeln; Eskalation und Rotation koordiniert mit dem Eigentümer,
-nicht nur Text löschen und den Vorfall als erledigt erklären.
+No hardware/production access in public CI. Do not run untrusted PRs on personal machines
+or on a self-hosted runner with home network access. In the initial start, only document/schema checks
+on GitHub-hosted standard runners, minimal permissions and no operator secrets.
+Private operating documents are not a public bug report. An accidentally published secret
+must be treated as compromised; escalation and rotation are coordinated with the owner —
+do not just delete the text and declare the incident closed.

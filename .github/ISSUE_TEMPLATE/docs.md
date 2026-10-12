@@ -1,23 +1,23 @@
 ---
-name: "Dokumentation / Quellen"
-about: "Unklarheiten, Fehler oder fehlende Herkunft in der Dokumentation verbessern"
+name: "Documentation / sources"
+about: "Improve unclear statements, errors or missing provenance in the documentation"
 title: ""
 labels: "type:docs,status:triage"
 assignees: ""
 ---
 
-## Fundstelle
-Datei und Abschnitt (oder Zeile/Commit), z. B. `docs/PROFILES.md`, Abschnitt „…“.
+## Location
+File and section (or line/commit), e.g. `docs/PROFILES.md`, section "…".
 
-## Fehler / vorgeschlagene Korrektur
-Was steht dort, was sollte dort stehen?
+## Error / proposed correction
+What does it say, and what should it say?
 
-## Quelle
-Beleg für die Korrektur (öffentlicher Link, Version/Commit, Datum).
+## Source
+Evidence for the correction (public link, version/commit, date).
 
-## Abnahme
-Woran erkennt man, dass die Korrektur erledigt ist?
+## Acceptance
+How can we tell that the correction is done?
 
-## Datenschutz
-Keine Schlüssel, .env-Dateien, privaten Prompts/Antworten oder vollständigen Logs anhängen.
-Vertrauliche Sicherheitsprobleme nicht öffentlich melden; siehe SECURITY.md.
+## Privacy
+Do not attach keys, .env files, private prompts/responses or complete logs.
+Do not report confidential security issues publicly; see SECURITY.md.

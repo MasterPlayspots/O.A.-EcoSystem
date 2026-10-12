@@ -1,30 +1,30 @@
 ---
-name: "Gerätebericht"
-about: "Ein konkretes Geräteprofil mit nachprüfbarem Beleg"
+name: "Device report"
+about: "A concrete device profile with verifiable evidence"
 title: ""
 labels: "area:profiles,status:triage"
 assignees: ""
 ---
 
-## Gerätefamilie
-Modellfamilie; bei Konsolen die CFI nur, wenn sie für das Ergebnis nötig ist.
+## Device family
+Model family; for consoles, the CFI only if it is needed for the result.
 
-## Firmware / Betriebssystem
+## Firmware / operating system
 
-## Runtime- und Modellversion
-Name und exakte Version/Revision, Quantisierung, Quelle.
+## Runtime and model version
+Name and exact version/revision, quantisation, source.
 
-## Bedingungen
-Was wurde wie ausgeführt (Parameter, Kontext, Rolle des Geräts)?
+## Conditions
+What was run and how (parameters, context, role of the device)?
 
-## Datum der Beobachtung
+## Date of observation
 
-## Beleg
-Redigierter Auszug oder Messwerte mit Einheit und Messpunkt.
+## Evidence
+Redacted excerpt or measured values with unit and measurement point.
 
-## Grenzen
-Was wurde nicht geprüft, was ist unbekannt?
+## Limits
+What was not checked, what is unknown?
 
-## Datenschutz
-Keine Seriennummern, IP-Adressen, Hostnamen, Secretwerte oder vollständigen Logs posten.
-Vertrauliche Sicherheitsprobleme nicht öffentlich melden; siehe SECURITY.md.
+## Privacy
+Do not post serial numbers, IP addresses, hostnames, secret values or complete logs.
+Do not report confidential security issues publicly; see SECURITY.md.

@@ -1,27 +1,27 @@
-# Fähigkeiten und Gerätevertrag — Entwurf
+# Capabilities and device contract — draft
 
-Ein Gerätetyp ist keine Fähigkeit. Betriebssystem, Architektur, Firmware, Runtime, Backend,
-Modell, Zustand und ausgeführter Kontrakttest entscheiden zusammen.
+A device type is not a capability. Operating system, architecture, firmware, runtime, backend,
+model, state and the contract test actually executed decide together.
 
-| Vertragsfeld | Bedeutung |
+| Contract field | Meaning |
 |---|---|
-| node_id / profile_id | Lokaler Alias und Profil, keine Seriennummer oder öffentliche IP |
-| roles | client, relay, gateway, inference_worker; spätere Rollen separat |
-| platform | OS, Architektur, bei Bedarf Firmware; unbekannt ausdrücklich offen |
-| runtime / backend | Name und feste Version; GPU nur mit Laufzeitnachweis |
-| capabilities | z. B. text_chat, streaming; wahr/falsch/unbekannt mit Evidenz |
-| limits | tatsächlich bekannte Kontext-/Token-/Parallelgrenzen; unknown nicht null Leistung |
-| memory | Dateigröße, Mapping, Residency, Peak, Lock, Buffer getrennt |
-| evidence | Art, Quelle, Zeitpunkt, Software-/Modellstand und Prüfumfang |
-| policy | erlaubte Datenklasse, Netzwerkgrenze, Auftrags-/Energiebudget, kein automatisches Cloud-Fallback |
-| availability | beobachtete Bereitschaft plus Aktualität, nicht ewiges online=true |
+| node_id / profile_id | Local alias and profile, not a serial number or public IP |
+| roles | client, relay, gateway, inference_worker; later roles separately |
+| platform | OS, architecture, firmware if needed; unknown explicitly left open |
+| runtime / backend | Name and fixed version; GPU only with runtime evidence |
+| capabilities | e.g. text_chat, streaming; true/false/unknown with evidence |
+| limits | actually known context/token/parallelism limits; unknown is not zero performance |
+| memory | file size, mapping, residency, peak, lock, buffers kept separate |
+| evidence | type, source, time, software/model version and scope of the check |
+| policy | permitted data class, network boundary, job/energy budget, no automatic cloud fallback |
+| availability | observed readiness plus freshness, not a permanent online=true |
 
-## Geplanter Auswahlablauf
+## Planned selection flow
 
-Anwender wählt Rolle und Profil → liest Voraussetzungen → registriert ausdrücklich den Endpunkt →
-prüft lokale Konfiguration → genehmigt separat eine begrenzte Netzwerkprüfung → genehmigt einen
-kleinen Funktionstest → akzeptiert die belegten Fähigkeiten. Ohne erfolgreichen Test kein Label „unterstützt“.
+The user chooses role and profile → reads the prerequisites → explicitly registers the endpoint →
+checks the local configuration → separately approves a limited network check → approves a
+small functional test → accepts the demonstrated capabilities. Without a successful test, no "supported" label.
 
-Ein späterer Router weist Jobs erst nach Fähigkeits- und Policyprüfung zu. Fehlende Daten
-führen zu einer erklärbaren Ablehnung, nicht zu einer geratenen Ressourcenzahl.
-Beim ersten Runtimeumfang ist genau ein Worker ausgewählt; kein automatisches Routing implementiert.
+A later router assigns jobs only after a capability and policy check. Missing data
+leads to an explainable rejection, not to a guessed resource figure.
+In the first runtime scope exactly one worker is selected; no automatic routing is implemented.

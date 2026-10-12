@@ -1,58 +1,65 @@
-# Kommunikationsstruktur — O.A.-EcoSystem
+# Communication structure — O.A.-EcoSystem
 
-## Führende Orte
+## Leading places
 
-| Ort | Inhalt | Nicht dort ablegen |
+| Place | Content | Do not put here |
 |---|---|---|
-| README + docs/PROJECT_INDEX.md | Einstieg, echter Status, Link zu nächster Aufgabe | Private Betreiberinformationen |
-| GitHub Discussions | Fragen, Ideen/RFCs, Geräteaustausch und Fortschritt | Secrets, vertrauliche Schwachstellen, verbindliche Entscheidungen ohne Übernahme |
-| GitHub Issues | Abgrenzbare Arbeit, Fehler, Abnahme und Blocker | Unstrukturierte Sammelaufträge „alles bauen“ |
-| Pull Requests | Konkrete Änderungen, Review, Testnachweise | Ungeprüfte private Quellen und Binärpakete |
-| docs/decisions/ | Akzeptierte Entscheidungen mit Begründung und Gegenargumenten | Chatmeinungen als beschlossen tarnen |
-| Privater Security-Kanal | Nicht öffentliche Schwachstellenklärung | Öffentliche Detaildiskussion vor koordinierter Meldung |
-| Internes Drive | Originale, Rohbelege, Betreiberpläne, Freigaben, datierte Exportsnapshots | Öffentlich erforderliche Spezifikation ausschließlich privat halten |
+| README + docs/PROJECT_INDEX.md | Entry point, actual status, link to the next task | Private operator information |
+| GitHub Discussions | Questions, ideas/RFCs, device exchange and progress | Secrets, confidential vulnerabilities, binding decisions without adoption |
+| GitHub Issues | Scoped work, bugs, acceptance and blockers | Unstructured catch-all requests to "build everything" |
+| Pull requests | Concrete changes, review, test evidence | Unreviewed private sources and binary packages |
+| docs/decisions/ | Accepted decisions with rationale and counter-arguments | Chat opinions disguised as decisions |
+| Private security channel | Non-public clarification of vulnerabilities | Public detailed discussion before coordinated disclosure |
+| Internal Drive | Originals, raw evidence, operator plans, approvals, dated export snapshots | Keeping publicly required specifications private only |
 
-Discord, Messenger oder andere Communitykanäle sind optional. Sie werden in diesem Start weder angelegt
-noch verbunden. Dortige Entscheidungen müssen mit Zustimmung redigiert in Issue/ADR zurückgeführt werden.
+Discord, messengers or other community channels are optional. They are neither created
+nor connected in this start. Decisions made there must be brought back, redacted and with consent, into an issue/ADR.
 
 ## Discussions
 
-Vorgesehene Kategorien: **Ankündigungen** (Maintainer), **Fragen & Einstieg** (Q&A),
-**Ideen & RFCs**, **Geräteberichte**, **Zeig deinen Aufbau**. Vorhandene Kategorien wiederverwenden;
-neue Kategorien anhand der tatsächlich vorhandenen Rechte/API anlegen. Keine Kategorie-IDs erraten.
-Zum Start zwei Threads: „Hier anfangen / Mitmachen“ und „Welche Geräte und Rollen möchtet ihr einbringen?“.
-Private Schwachstellenmeldung ist kein Discussionsthema.
+Intended categories: **Announcements** (maintainers), **Q&A** (questions and getting started),
+**Ideas** (ideas and RFCs), **Device Reports**, **Show and tell**. Reuse existing categories;
+create new categories according to the rights/API actually available. Do not guess category IDs.
+Status observed on 12 Oct 2026 at 17:28 UTC: Announcements, Q&A, Ideas,
+Show and tell, General, Polls and **Device Reports** exist.
+The start announcement (#16) is pinned globally in the Discussions overview.
+Two threads at the start: "start here / get involved" and "which devices and roles would you like to contribute?".
+Private vulnerability reports are not a discussion topic.
 
-## Aufgabenfluss
+## Task flow
 
-Idee → konkrete Task-ID → Issue → Scope/Abnahmekriterien → Branch/PR → Review → Merge durch
-berechtigten Maintainer → Nachweis/ADR/Profilstatus aktualisieren. Die GitHub-Issuenummer ist erst nach
-tatsächlicher Anlage bekannt. Beispielsweise ist OA-REVIEW-01 eine Task-ID, nicht Issue #1.
-Vor jeder neuen Anlage nach Task-ID und Titel suchen, auch geschlossene Issues beachten.
+Idea → concrete task ID → issue → scope/acceptance criteria → branch/PR → review → merge by an
+authorised maintainer → update evidence/ADR/profile status. The GitHub issue number is only known after
+actual creation. For example, OA-REVIEW-01 is a task ID, not issue #1.
+Before creating anything new, search by task ID and title, including closed issues.
 
-Jedes Issue hat Ziel, Nicht-Ziele, Auslieferung, Abnahmetests, Abhängigkeiten, Risiko und Quellen.
-Kleine PRs referenzieren das Issue und nennen ausgeführte/nicht ausgeführte Tests. Keine automatischen Merges.
-Kennzeichnung: type:docs/review/feature/research/bug; area:core/profiles/security/community;
-priority:p0/p1/p2; status:triage/ready/in-progress/review/blocked. Done ist ein geschlossenes abgenommenes Issue.
-„good first issue“ nur auf kleine tatsächlich zugängliche Aufgaben; Rechte-/Gerätearbeit nicht so etikettieren.
+Every issue has goal, non-goals, delivery, acceptance tests, dependencies, risk and sources.
+Small PRs reference the issue and state tests run/not run. No automatic merges.
+Labels: type:docs/review/feature/research/bug; area:core/profiles/security/community;
+priority:p0/p1/p2; status:triage/ready/in-progress/review/blocked. Done is a closed, accepted issue.
+"good first issue" only on small, genuinely accessible tasks; do not label permission/device work that way.
 
-## Rollen und Freigaben
+## Roles and approvals
 
-Kevin Fröba priorisiert, moderiert und entscheidet über externe Freigaben und Maintainerzugänge.
-ChatGPT konsolidiert Evidenz und Übergaben. Claude prüft und implementiert den konkret beauftragten Umfang.
-Communitybeiträge beginnen per Fork/PR. Niemand erhält automatisch Schreib-/Adminzugriff.
-Ein Review eines anderen Modells unter demselben GitHub-Konto ersetzt kein unabhängiges menschliches Approval.
-Fehlt ein erforderlicher Reviewer, bleibt der PR offen; Regeln nicht still schwächen.
+Kevin Fröba prioritises, moderates and decides on external releases and maintainer access.
+ChatGPT consolidates evidence and handoffs. Claude reviews and implements the specifically requested scope.
+Community contributions start via fork/PR. Nobody automatically receives write/admin access.
+A review by another model under the same GitHub account does not replace an independent human approval.
+If a required reviewer is missing, the PR stays open; do not quietly weaken the rules.
 
-## Rhythmus ohne erfundene Automatisierung
+## Rhythm without invented automation
 
-Vorschlag: wöchentlicher kurzer Maintainerstatus; ereignisbezogene Updates nach akzeptiertem PR,
-Profilabnahme oder wichtigem Blocker. Dies ist keine eingerichtete Automation und kein Support-SLA.
-Nach jeder Agentensitzung: Head, Tasks, Befunde, Tests, Aktionen/Nicht-Aktionen, Blocker, nächster Auftrag.
-Rücklauf am Issue/PR öffentlich redigiert; private Betriebsdetails im internen Protokoll.
+Proposal: a short weekly maintainer status; event-based updates after an accepted PR,
+a profile acceptance or an important blocker. This is not configured automation and not a support SLA.
+After every agent session: head, tasks, findings, tests, actions/non-actions, blockers, next request.
+Report back on the issue/PR in redacted public form; private operating details go into the internal log.
 
-## Sprache und Umgang
+## Language and conduct
 
-Erststart Deutsch; englische Beiträge willkommen, englischer Einstieg als eigene Aufgabe.
-Technische Kennungen bleiben konsistent. Sachlich kritisieren, Upstreams würdigen,
-keine ungeprüften Sicherheits-, Leistungs-, Nachhaltigkeits- oder Kompatibilitätsversprechen.
+Maintained public project material — README, documentation, contribution/conduct/security rules,
+agent instructions, templates and project-maintained GitHub entry texts — and new project-authored updates
+are written in English. Internal coordination and historical originals may remain in German;
+originals and historical evidence are not retroactively translated or rewritten.
+Community members are not excluded solely for using another language.
+Technical identifiers stay consistent. Criticise factually, credit upstreams,
+make no unverified security, performance, sustainability or compatibility promises.

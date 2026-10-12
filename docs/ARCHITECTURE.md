@@ -1,42 +1,42 @@
-# Zielarchitektur
+# Target architecture
 
 ```text
-Anwendung / Nutzer / optionales Agentenwerkzeug
+Application / user / optional agent tool
               |
-        API-Vertrag + Policy
+        API contract + policy
               |
-   Gateway auf ausdrücklich gewähltem Host
+   Gateway on an explicitly chosen host
               |
-      geprüfter Backendadapter
+      verified backend adapter
               |
-   ein konfigurierter Text-Inferenzworker
+   one configured text inference worker
 ```
 
-Ein Gerät darf mehrere Rollen tragen. Für einen Einzelhost ist kein Tunnel nötig.
-Im Heimnetz können Rollen getrennt werden. Entfernte Gateways und private Tunnel sind optional.
-Für PS5 beschreibt das experimentelle Referenzprofil den Weg über einen Heimnetzvermittler,
-Reverse-SSH, VPS und optionalen HTTPS-Edge. Ein PC benötigt diesen Konsolen-Bootstrap nicht.
+One device may carry several roles. A single host needs no tunnel.
+In a home network, roles can be separated. Remote gateways and private tunnels are optional.
+For the PS5, the experimental reference profile describes the path via a home-network relay,
+reverse SSH, a VPS and an optional HTTPS edge. A PC does not need this console bootstrap.
 
-## Rollen
+## Roles
 
-Client: stellt Anfragen und zeigt Ergebnisse. Gateway: Auth, validierte Felder, Grenzen und Abbruch.
-Relay: Transport; kein automatischer Inferenzprozess. Worker: berechnet eine deklarierte Fähigkeit.
-Koordinator: später optionales Modul für die Zuteilung ganzer unabhängiger Aufgaben.
-Speicher-/Indexdienst: später gesonderte Fähigkeit, kein inhärenter Teil des Textworkers.
+Client: makes requests and displays results. Gateway: auth, validated fields, limits and cancellation.
+Relay: transport; no automatic inference process. Worker: computes a declared capability.
+Coordinator: a later optional module for assigning whole independent tasks.
+Storage/index service: a later separate capability, not an inherent part of the text worker.
 
-## Vertrag und Ausfälle
+## Contract and failures
 
-Erster Kandidat: GET /health, GET /v1/models, POST /v1/chat/completions für Text, optional SSE.
-Modellaliase statt privater Dateipfade; keine frei wählbaren Request-Upstream-URLs.
-Unsupported Features werden abgewiesen. Fehlende Usage bleibt unbekannt.
-Headerzeit, erster sichtbarer Text und vollständige Antwortdauer sind getrennte Messpunkte.
-Kein nachträglicher HTTP-504-Wechsel nach Beginn eines 200-Streams; Abbruch bleibt unvollständig.
-Nach unbestätigtem Workerabbruch den einzigen Slot nicht voreilig erneut vergeben.
+First candidate: GET /health, GET /v1/models, POST /v1/chat/completions for text, optionally SSE.
+Model aliases instead of private file paths; no freely selectable request upstream URLs.
+Unsupported features are rejected. Missing usage remains unknown.
+Header time, first visible text and full response duration are separate measurement points.
+No later switch to HTTP 504 after a 200 stream has started; a cancellation stays incomplete.
+After an unconfirmed worker cancellation, do not hastily reassign the single slot.
 
-## Vertrauensgrenzen
+## Trust boundaries
 
-Endpunktregistrierung ist eine Betreiberhandlung, kein Netzscan und keine Hardwareverifikation.
-TLS/SSH nicht als Schutz eines unverschlüsselten letzten LAN-Hops ausgeben.
-Authentifizierung am Gateway sichert keine direkt erreichbare Konsolenverwaltung.
-Keine vertraulichen Prompts ungefragt in Cloud-/Fallbackpfade schicken. Keine globale
-Speicheraggregation, kein Versprechen einer direkten Nutzung fremder GPUs durch einen Tunnel.
+Endpoint registration is an operator action, not a network scan and not hardware verification.
+Do not present TLS/SSH as protection of an unencrypted last LAN hop.
+Authentication at the gateway does not secure a directly reachable console administration.
+Do not send confidential prompts into cloud/fallback paths unasked. No global
+memory aggregation, no promise of direct use of other devices' GPUs through a tunnel.

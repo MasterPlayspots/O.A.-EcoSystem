@@ -1,50 +1,50 @@
-# Evidenz, Messberichte und erste RAM-Untersuchung
+# Evidence, measurement reports and the first RAM investigation
 
-## Nachweisarten
+## Types of evidence
 
-Eigene Messung (mit ausführender Person/Rücklauf), Repository-Prüfung, Herstellerangabe,
-fremde Projektmessung, Hypothese und unbekannt werden getrennt geführt.
-Das heutige Lesen eines alten Reports erneuert sein Messdatum nicht. Ein CI-Test mit Fixture misst keine PS5.
-HTTP 200 beweist weder sichtbaren Text noch die Hardware oder den Backend. Neue Fähigkeiten werden erst nach Abnahme markiert.
+Own measurement (with the person who ran it/report back), repository check, manufacturer statement,
+third-party project measurement, hypothesis and unknown are kept separate.
+Reading an old report today does not renew its measurement date. A CI test with a fixture does not measure a PS5.
+HTTP 200 proves neither visible text nor the hardware or the backend. New capabilities are only marked after acceptance.
 
-## Minimaler redigierter Bericht
+## Minimal redacted report
 
-Quelle; Messzeit in UTC und Zeitzone; Gerätefamilie/CFI und Firmware; Host-/Runtime-/Modellrevision;
-Hash und Hashprovenienz; Profil/Route ohne privaten Host; Parameter einschließlich Thinking, Kontext und Limit;
-Cachezustand; tatsächliche Tokenzahl; Endegrund; erster sichtbarer Text; Headerzeit; Gesamtzeit;
-Serverzeiten separat; Einheit und Messpunkt; Fehler und Endzustand.
+Source; measurement time in UTC and time zone; device family/CFI and firmware; host/runtime/model revision;
+hash and hash provenance; profile/route without a private host; parameters including thinking, context and limit;
+cache state; actual token count; finish reason; first visible text; header time; total time;
+server times separately; unit and measurement point; errors and final state.
 
-Keine Secrets, Seriennummern, Host-IDs, privaten Prompts oder Antwortinhalte verlangen.
-Fehlende Werte sind null mit Begründung, nicht 0 Leistung oder 0 Byte.
-Dauern pro Messpunkt mit monotoner Uhr, keine Differenz unsynchronisierter Hostzeitstempel.
-Rohdaten begrenzt und redigiert mit Prüfsumme erhalten. Kleine Stichproben nicht als Dauerlast/p95 vermarkten.
+Do not ask for secrets, serial numbers, host IDs, private prompts or response content.
+Missing values are null with a reason, not 0 performance or 0 bytes.
+Durations per measurement point with a monotonic clock, not a difference of unsynchronised host timestamps.
+Keep raw data limited and redacted with a checksum. Do not market small samples as sustained load/p95.
 
-## RAM-01: erst beobachten, nicht bis zum Crash allokieren
+## RAM-01: observe first, do not allocate until it crashes
 
-Ziel ist zunächst ein stabiles Arbeitsprofil eines definierten Inferenzlaufs, keine behauptete absolute Obergrenze.
-Zuerst vorhandene Logs und unterstützte Counter des tatsächlichen Inferenzprozesses prüfen.
-Ein neuer Diagnosepayload ist ein Eingriff und braucht eine separate Freigabe; sein Name beweist keine Passivität.
-Linux-/BSD-Zähler nicht ohne bestätigte Plattformsemantik auf der PS5 voraussetzen.
+The goal is initially a stable working profile of a defined inference run, not a claimed absolute upper limit.
+First check existing logs and supported counters of the actual inference process.
+A new diagnostic payload is an intervention and needs a separate approval; its name does not prove passivity.
+Do not assume Linux/BSD counters on the PS5 without confirmed platform semantics.
 
-Getrennte Größen: Modelldateibytes, Mapping, aktuelle Residency/RSS, Peak, angeforderte/erfolgreiche Sperrbytes,
-KV-/rekurrente Zustandsbuffer, Arbeitsbuffer, Runtimeoverhead, Fault-/I/O-Deltas und Systemdruck.
-Überlappende Speicheranteile nicht doppelt zählen. mlock-Anforderung ist kein Erfolg.
-Minor Faults beweisen keinen Datenträgerzugriff; Major Faults/File-Page-ins nicht automatisch Swap.
+Separate quantities: model file bytes, mapping, current residency/RSS, peak, requested/successful locked bytes,
+KV/recurrent state buffers, working buffers, runtime overhead, fault/I/O deltas and system pressure.
+Do not double-count overlapping memory shares. An mlock request is not success.
+Minor faults do not prove disk access; major faults/file page-ins are not automatically swap.
 
-Erst nach Instrumentierungsreview und Betriebsfreigabe: kleines 0.8B-Profil, ein Modell,
-kurze sequenzielle Anfragen, begrenzte Telemetrie und Idle-/Wiederaufnahmebeobachtung.
-Messbudget, Abtastrate, Rückweg und Stopregeln vorher festlegen; keine Priorität/Threads/Dateigrenze erhöhen.
-Bei Warnungen, API-Verlust, UI-Blockade oder Budgetüberschreitung keine weiteren Aufträge.
-2B und Kontextvariationen folgen getrennt. Keine Vollhash-/Full-Page-Touch-Aktion unmittelbar vor
-Residencyversuchen als vermeintlich zustandsneutrale Messung.
+Only after an instrumentation review and operational approval: a small 0.8B profile, one model,
+short sequential requests, limited telemetry and idle/resume observation.
+Define the measurement budget, sampling rate, return path and stop rules beforehand; do not raise priority/threads/file limits.
+In case of warnings, API loss, UI blocking or budget overrun, no further jobs.
+2B and context variations follow separately. No full-hash/full-page-touch action immediately before
+residency attempts as a supposedly state-neutral measurement.
 
-Fremde Messungen aus [PS5LM CONSOLE.md](https://github.com/cobanov/PS5LM/blob/4173291e0554ff60945f3ed3b0a2d9dcc5190168/docs/CONSOLE.md)
-gehören zu dessen Testgerät, nicht zu jeder Konsole. Die dort beschriebenen Grenzen sind keine eigenen Sicherheitsbudgets.
-Keine neue Geräteprüfung wurde durch das Verfassen dieses Dokuments ausgeführt.
+Third-party measurements from [PS5LM CONSOLE.md](https://github.com/cobanov/PS5LM/blob/4173291e0554ff60945f3ed3b0a2d9dcc5190168/docs/CONSOLE.md)
+belong to its test device, not to every console. The limits described there are not our own safety budgets.
+No new device check was carried out by writing this document.
 
 
-## Einordnung im neuen Dachprojekt
+## Placement in the new umbrella project
 
-Die PS5-spezifische RAM-Untersuchung ist ein einzelnes Profil. Andere Geräte benötigen
-entsprechende eigene Zähler und Tests; API-, Betriebssystem- und Ressourcensemantik nicht übertragen.
-Die allgemeinen Evidenzregeln gelten unabhängig von einem bestimmten Gerät.
+The PS5-specific RAM investigation is a single profile. Other devices need
+their own corresponding counters and tests; do not transfer API, operating-system or resource semantics.
+The general evidence rules apply independently of any particular device.

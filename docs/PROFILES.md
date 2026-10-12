@@ -1,23 +1,23 @@
-# Geräteprofile und Nachweisstatus
+# Device profiles and evidence status
 
-**Alle folgenden Kombinationen sind zunächst Designkandidaten, keine aktuelle Supportmatrix.**
-Historische PS5-Messungen sind getrennt von einer unabhängigen Abnahme dieses Repositories.
+**All of the following combinations are initially design candidates, not a current support matrix.**
+Historical PS5 measurements are separate from an independent acceptance in this repository.
 
-| Familie / Profil | Vorgesehene Rollen | Was vor Support zu prüfen ist |
+| Family / profile | Intended roles | What must be checked before support |
 |---|---|---|
-| Mock ohne Inferenzhardware | Client, Fixture, Vertragsprüfung | Simulierte Antworten eindeutig; keine echten Benchmarks |
-| Linux x86-64 | Gateway/Relay; Inferenz bei passender Runtime | OS/CPU-Backend, konkrete GPU-/Treiberkombinationen separat |
-| macOS / Apple Silicon | Client/Gateway/Relay; passende lokale Inferenz | OS/Runtime/Backend, Start-/Stopp- und Speicherprofil |
-| Windows | Client; weitere Rollen als eigenes Hostprofil | Pfade, Dienstverwaltung, CPU/GPU-Backend einzeln |
-| Linux ARM / Mini-PC / NAS | Relay/Gateway, ggf. Speicher; Inferenz nur nach Test | Betriebssystem, Paketarchitektur, RAM, Rechte und Dauerbetrieb |
-| Mobilgerät / Browser | Client im ersten Umfang | Auth, Streamdarstellung und Bedienung; keine zugesagte mobile Inferenz |
-| Eigener VPS | Gateway/Koordination; ggf. eigener Worker | Anbieterunabhängige Konfiguration und konkrete Ressourcen |
-| PS5 | Experimenteller Inferenzworker | CFI/Firmware/Loader/PS5LM/Modell, LAN-Grenzen, Wiederanlauf und RAM |
-| PS4 / andere Konsolen | Forschung | Kein nachgewiesener Runtime- oder Leistungsstatus |
+| Mock without inference hardware | Client, fixture, contract check | Simulated responses clearly marked; no real benchmarks |
+| Linux x86-64 | Gateway/relay; inference with a suitable runtime | OS/CPU backend; specific GPU/driver combinations separately |
+| macOS / Apple Silicon | Client/gateway/relay; suitable local inference | OS/runtime/backend, start/stop and memory profile |
+| Windows | Client; further roles as a separate host profile | Paths, service management, CPU/GPU backend individually |
+| Linux ARM / mini PC / NAS | Relay/gateway, possibly storage; inference only after testing | Operating system, package architecture, RAM, permissions and continuous operation |
+| Mobile device / browser | Client in the first scope | Auth, stream display and usability; no promised mobile inference |
+| Own VPS | Gateway/coordination; possibly its own worker | Provider-independent configuration and concrete resources |
+| PS5 | Experimental inference worker | CFI/firmware/loader/PS5LM/model, LAN limits, restart and RAM |
+| PS4 / other consoles | Research | No demonstrated runtime or performance status |
 
-Bewertungsstufen: geplant → Fixture-verifiziert → auf eigenem Gerät gemessen → unabhängig
-nachgebaut. „Nicht unterstützt“ und „veraltet“ sind zusätzliche Zustände. Jedes Label benötigt
-Profilversion, Testdatum, Runtime und Evidenz; eine alte erfolgreiche Messung ist kein heutiger Betriebscheck.
+Rating levels: planned → fixture-verified → measured on own device → independently
+reproduced. "Not supported" and "deprecated" are additional states. Every label needs
+a profile version, test date, runtime and evidence; an old successful measurement is not today's operational check.
 
-Rollen werden nicht aus Marke, nominellem RAM oder Grafikleistung automatisch vergeben.
-Cloud-/Remoteprofile sind optional. Keine Pflicht zu PS5, Hetzner, Cloudflare oder einem OurArk-Konto.
+Roles are not assigned automatically from brand, nominal RAM or graphics performance.
+Cloud/remote profiles are optional. No obligation to use a PS5, Hetzner, Cloudflare or an OurArk account.

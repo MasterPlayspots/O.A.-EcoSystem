@@ -1,43 +1,43 @@
-# Masterplan — geräteunabhängiger Einstieg
+# Masterplan — device-independent entry
 
-## Ziel
+## Goal
 
-Ein Anwender verwendet passende Rollen auf den Geräten, die er bereits besitzt. Die geplante
-Integrationsschicht verbindet Anwendungen mit ausdrücklich konfigurierten Rechenendpunkten.
-Geräteprofile ergänzen den Kern, sie definieren ihn nicht. PS5 & Hetzner bleibt eine historische
-Forschungsbasis und ein künftiger Nachbaupfad, kein Pflichtbestandteil.
+A user employs suitable roles on the devices they already own. The planned
+integration layer connects applications with explicitly configured compute endpoints.
+Device profiles complement the core; they do not define it. PS5 & Hetzner remains a historical
+research basis and a future reproduction path, not a mandatory component.
 
-## Erstes umsetzbares Teilziel
+## First achievable sub-goal
 
-Zuerst Community-Dokumentation online, dann Fähigkeiten-/API-Vertrag, dann ein hardwarefreier Mock.
-Anschließend ein generischer HTTP-Textworker, clientseitige Beispiele und ein geprüfter Einzelhostpfad.
-Danach die bekannte PS5-Strecke schrittweise abnehmen. Der erste Runtimeumfang bleibt ein Betreiber,
-ein ausgewählter Worker, eine gleichzeitig zugelassene Anfrage. Kein Scheduler wird dafür benötigt.
+First community documentation online, then the capability/API contract, then a hardware-free mock.
+After that a generic HTTP text worker, client-side examples and a verified single-host path.
+Then accept the known PS5 route step by step. The first runtime scope remains one operator,
+one selected worker, one concurrently admitted request. No scheduler is needed for that.
 
-## Adapter statt universeller Installer
+## Adapters instead of a universal installer
 
-Ein Geräteprofil beschreibt OS/Architektur/Firmware, Runtime/Backend, Modellherkunft, zulässige
-Rollen, installierte und nachgewiesene Funktionen sowie Testdatum. Ein Adapter übersetzt lediglich
-zwischen dem überprüften Backendvertrag und dem Kern. Keine automatische Installation fehlender Treiber,
-keine Hardwareübernahme und keine beliebige Programmausführung aus Communityprofilen.
+A device profile describes OS/architecture/firmware, runtime/backend, model provenance, permitted
+roles, installed and demonstrated functions, and the test date. An adapter merely translates
+between the verified backend contract and the core. No automatic installation of missing drivers,
+no hardware takeover and no arbitrary program execution from community profiles.
 
-Der konfigurierende Anwender entscheidet lokal, im LAN oder über einen eigenen entfernten Zugang.
-Alle Konten, Domains und Schlüssel gehören ihm. Eine lokale Policy verhindert ungefragtes
-Cloud-Ausweichen oder Senden von Daten an andere Betreiber.
+The configuring user decides: locally, in the LAN or via their own remote access.
+All accounts, domains and keys belong to them. A local policy prevents unrequested
+cloud fallback or sending data to other operators.
 
-## Erweiterungen
+## Extensions
 
-Mehrere Geräte, Jobwarteschlange, Modellrouting und Failover folgen erst nach Definition von
-Identität, Leases, Deadlines, Abbruch, Idempotenz und Datenschutz. Rendering, Simulation, Audio,
-Embeddings, GPU, MoE und lokale mobile Inferenz sind eigenständige Fähigkeiten mit eigenen Tests.
-Das Projekt ist offen für diese Pfade, behauptet sie aber nicht als schon verfügbar.
+Multiple devices, a job queue, model routing and failover only follow after the definition of
+identity, leases, deadlines, cancellation, idempotency and privacy. Rendering, simulation, audio,
+embeddings, GPU, MoE and local mobile inference are separate capabilities with their own tests.
+The project is open to these paths but does not claim them as already available.
 
-## Veröffentlichung
+## Publication
 
-Der erste öffentliche Stand enthält neue eigene Dokumentation, Profile als Entwürfe und Reviews.
-Runtimecode wird später selektiv auf einem eigenen Branch vorbereitet; kein privates Monorepo
-und keine dessen Git-Historie veröffentlichen. Jede tatsächliche Hardwarefreigabe braucht Nachweise.
-Eine unbekannte absolute RAM-Kapazität blockiert keine ehrlich begrenzte Dokumentationsöffnung.
+The first public state contains new documentation of our own, profiles as drafts and reviews.
+Runtime code will later be prepared selectively on its own branch; no private monorepo
+and none of its Git history will be published. Every actual hardware approval needs evidence.
+An unknown absolute RAM capacity does not block an honestly limited documentation opening.
 
-Siehe [Roadmap](ROADMAP.md), [Profile](PROFILES.md), [Sicherheitsrichtlinie](../SECURITY.md)
-und [Credits](../CREDITS.md). Keine Betriebsaktion aus diesem Plan ableiten.
+See [Roadmap](ROADMAP.md), [Profiles](PROFILES.md), [Security policy](../SECURITY.md)
+and [Credits](../CREDITS.md). Do not derive any operational action from this plan.

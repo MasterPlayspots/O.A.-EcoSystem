@@ -1,6 +1,6 @@
-# Profilregister — Planungsdaten
+# Profile register — planning data
 
-[catalog.json](catalog.json) ist eine nicht ausführbare Startübersicht. Es installiert keine
-Software, registriert keine echten Geräte und behauptet keine bestandenen Tests.
-Bedeutung und Bewertung: [Geräteprofile](../docs/PROFILES.md) und [Fähigkeiten](../docs/CAPABILITIES.md).
-Ein formales JSON-Schema ist eine eigene Aufgabe, nicht schon durch die Namensendung implementiert.
+[catalog.json](catalog.json) is a non-executable starting overview. It installs no
+software, registers no real devices and claims no passed tests.
+Meaning and rating: [Device profiles](../docs/PROFILES.md) and [Capabilities](../docs/CAPABILITIES.md).
+A formal JSON Schema is a separate task, not already implemented by the file extension.

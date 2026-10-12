@@ -1,16 +1,16 @@
-## Zugehörige Task / Issue
+## Related task / issue
 
-## Änderung und Nicht-Ziele
+## Change and non-goals
 
-## Tatsächlich ausgeführte Prüfungen
+## Checks actually run
 
-## Nicht ausgeführte Prüfungen / Nachweisgrenzen
+## Checks not run / limits of evidence
 
-## Betroffene Profile, Quellen und Credits
+## Affected profiles, sources and credits
 
-## Sicherheit / Datenschutz / benötigte Freigaben
+## Security / privacy / required approvals
 
-- [ ] Keine Secrets oder privaten Betriebsdaten enthalten.
-- [ ] Keine Geräte-/Leistungszusage ohne Nachweis.
-- [ ] Drittanteile und Lizenzen korrekt zugeordnet.
-- [ ] Kein automatischer Merge oder Deployment vorausgesetzt.
+- [ ] Contains no secrets or private operating data.
+- [ ] No device/performance claim without evidence.
+- [ ] Third-party parts and licences correctly attributed.
+- [ ] No automatic merge or deployment assumed.

@@ -5,8 +5,8 @@
 **Phase: community bootstrap / planning and documentation stage.**
 This repository is a place to contribute. It does not yet contain an installable inference core,
 tested automatic device discovery or any general hardware approval.
-The files were prepared for the first public state; the actual online state
-must be checked against the repository and its commits.
+The repository has been public since 12 Oct 2026. Current task, review and merge status
+lives in the linked issues and pull requests, not in this overview.
 
 ## What we are building
 

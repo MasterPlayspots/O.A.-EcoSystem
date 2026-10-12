@@ -10,7 +10,7 @@ Project lead: Kevin Fröba. Starting phase: community bootstrap, not an installa
 | [Profiles](PROFILES.md) | What is planned/checked for which hardware |
 | [Communication](COMMUNICATION.md) | Discussions, issues, PRs, decisions, status |
 | [Roadmap](ROADMAP.md) | Small work packages and acceptance criteria |
-| [Claude review](CLAUDE_REVIEW.md) | First independent cross-check brief |
+| [Claude review](CLAUDE_REVIEW.md) | Brief for the first technical cross-check (an agent review is not an independent approval) |
 | [Evidence](EVIDENCE.md) | Measurement data and limits of the RAM diagnosis |
 | [Repository administration](REPOSITORY_ADMIN.md) | Actually verifying platform protection |
 | [Decisions](decisions/0001-device-independent-core.md) | New umbrella structure and first sub-project |
